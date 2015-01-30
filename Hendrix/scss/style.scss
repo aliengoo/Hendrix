@@ -1,0 +1,29 @@
+div {
+  &[ui-view] {
+    &.ng-enter {
+      animation: fadeIn 0.5s;
+      -webkit-animation: fadeIn 0.5s;
+    }
+  }
+}
+
+.search-bar {
+  &.ng-hide-add {
+    animation: fadeOutUp .5s;
+    -webkit-animation: fadeOutUp .5s;
+  }
+
+  &.ng-hide-remove {
+    animation: fadeInDown .5s;
+    -webkit-animation: fadeInDown .5s;
+  }
+}
+
+div.search-bar {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width:400px;
+  margin-left:-200px;
+  left:50%;
+}
