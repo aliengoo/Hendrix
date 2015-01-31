@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label for="birthDate" class="control-label">Birth date</label>
+  <input ng-model="birthDate" type="text" id="birthDate" name="birthDate" class="form-control small" ng-required="true" ui-mask="99/99/9999"/>
+
+  <div ng-messages="form.birthDate.$error" class="messages">
+            <span ng-message="required" class="help-block">
+              Birth date is required
+            </span>
+           <span ng-message="birthDate" class="help-block">
+              Birth date is not valid
+            </span>
+  </div>
+</div>

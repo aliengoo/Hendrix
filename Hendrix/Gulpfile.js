@@ -27,11 +27,15 @@ var vendorSrcFiles = [
   'bower/stringjs/lib/string.min.js',
   'bower/sweetalert/lib/sweet-alert.min.js',
   'bower/angular-local-storage/dist/angular-local-storage.min.js',
+  'bower/angular-messages/angular-messages.min.js',
   'bower/toastr/toastr.min.js',
   'bower/angular-bootstrap/ui-bootstrap-tpls.min.js',
   'bower/angular-animate/angular-animate.min.js',
   'bower/angular-hotkeys/build/hotkeys.min.js',
   'bower/angular-ui-utils/ui-utils.min.js',
+  'bower/momentjs/min/moment-with-locales.min.js',
+  'bower/lodash/lodash.min.js',
+  'bower/accounting.js/accounting.min.js'
 ];
 
 var vendorSrcMaps = [
@@ -40,6 +44,7 @@ var vendorSrcMaps = [
   'bower/angular-resource/angular-resource.min.js.map',
   'bower/angular-animate/angular-animate.min.js.map',
   'bower/jquery/dist/jquery.min.map',
+  'bower/angular-messages/angular-messages.min.js.map'
 ];
 
 var cssFiles = [

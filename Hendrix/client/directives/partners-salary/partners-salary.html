@@ -1,0 +1,6 @@
+<money name="partnersSalary" ng-model="partnersSalary" label="Partner's salary" classes="small" min="0" max="1000000">
+  <div ng-messages="form.partnersSalary.$error" class="messages">
+    <span ng-message="range" class="help-block">Partner's salary is not valid</span>
+    <span ng-message="required" class="help-block">Partner's salary is required</span>
+  </div>
+</money>

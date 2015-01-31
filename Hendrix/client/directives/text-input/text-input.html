@@ -1,0 +1,13 @@
+<div class="form-group"
+     ng-form="textInputForm">
+  <label for="<%= name %>" class="control-label">{{label}}</label>
+  <input
+    type="text"
+    class="form-control <%= classes %>"
+    id="<%= name %>"
+    name="<%= name %>"
+    ng-model="ngModel"
+    ng-required="ngRequired"
+    >
+  <span ng-transclude></span>
+</div>

@@ -1,5 +1,47 @@
 <div class="container">
-  <header>
-    <h1>Lead</h1>
-  </header>
+  <div class="col-md-12">
+    <header>
+      <h1>Lead</h1>
+    </header>
+
+    <form novalidate ng-submit="submit()" name="leadForm">
+
+      <div class="col-md-6">
+
+        <first-name ng-model="vm.lead.person.firstName"></first-name>
+
+        <middle-names ng-model="vm.lead.person.middleNames"></middle-names>
+
+        <last-name ng-model="vm.lead.person.lastName"></last-name>
+
+        <birth-date ng-model="vm.lead.person.birthDate"></birth-date>
+
+        <salary ng-model="vm.lead.person.salary"></salary>
+
+        <partners-salary ng-model="vm.lead.person.partnersSalary"></partners-salary>
+
+        <pre>{{leadForm.salary | json}}</pre>
+      </div>
+
+      <div class="col-md-6">
+        <text-input name="addressLine1"
+                    label="Address"
+                    classes="medium"
+                    ng-model="vm.lead.person.address.line1"
+                    ng-required="vm.ui.address.line1.required"></text-input>
+
+        <text-input name="addressLine2"
+                    classes="medium"
+                    ng-model="vm.lead.person.address.line2"
+                    ng-required="vm.ui.address.line1.required"></text-input>
+      </div>
+
+    <pre>
+      {{vm.lead | json}}
+    </pre>
+
+    </form>
+
+  </div>
+
 </div>

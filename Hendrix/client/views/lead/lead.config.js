@@ -11,8 +11,8 @@
       controller: 'Lead as vm',
       url: '/lead',
       resolve : {
-        lead : ['$q', function($q) {
-          return $q.when({});
+        lead : ['$q', 'leadValue', function($q, leadValue) {
+          return $q.when(angular.copy(leadValue));
         }]
       }
     }).state('lead', {

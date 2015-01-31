@@ -4,7 +4,10 @@
   angular.module('app', [
     'ui.router',
     'ngResource',
-    'cfp.hotkeys'
+    'ngMessages',
+    'ngAnimate',
+    'cfp.hotkeys',
+    'ui.mask'
   ]);
 
 }());

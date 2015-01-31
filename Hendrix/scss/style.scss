@@ -19,11 +19,75 @@ div {
   }
 }
 
+//.messages {
+//  &.ng-inactive {
+//    animation: fadeOutUp 1s;
+//    -webkit-animation: fadeOutUp 1s;
+//  }
+//
+//  &.ng-active {
+//    animation: fadeInDown .5s;
+//    -webkit-animation: fadeInDown .5s;
+//  }
+//}
+
+
+
 div.search-bar {
   position: absolute;
   top: 50%;
   z-index: 2;
-  width:400px;
-  margin-left:-200px;
-  left:50%;
+  width: 400px;
+  margin-left: -200px;
+  left: 50%;
+}
+
+input {
+  &.small {
+    width: 100px;
+  }
+
+  &.medium {
+    width: 200px;
+  }
+
+  &.large {
+    width: 280px;
+  }
+
+  &.money {
+    direction: rtl;
+  }
+}
+
+$enterAnimation : fadeInDown;
+$existAnimation : fadeOutUp;
+$animateTime : 0.3s;
+
+span {
+  &.help-block {
+    font-size: 10px;
+
+    &.ng-enter {
+      animation: $enterAnimation $animateTime;
+      -webkit-animation: $enterAnimation $animateTime;
+    }
+    &.ng-enter {
+      &.ng-enter-active {
+        animation: $enterAnimation $animateTime;
+        -webkit-animation: $enterAnimation $animateTime;
+      }
+    }
+
+    &.ng-leave {
+      animation: $existAnimation $animateTime;
+      -webkit-animation: $existAnimation $animateTime;
+    }
+    &.ng-leave {
+      &.ng-leave-active {
+        animation: $existAnimation $animateTime;
+        -webkit-animation: $existAnimation $animateTime;
+      }
+    }
+  }
 }

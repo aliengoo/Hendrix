@@ -1,0 +1,11 @@
+<text-input name="lastName"
+            label="Last name"
+            classes="medium"
+            ng-model="lastName"
+            ng-required="required">
+  <div ng-messages="form.lastName.$error">
+            <span ng-message="required" class="help-block">
+              Last name is required
+            </span>
+  </div>
+</text-input>

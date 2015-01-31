@@ -1,0 +1,17 @@
+<div class="form-group">
+  <label for="<%= name %>" class="control-label">{{label}}</label>
+  <input
+    type="text"
+    class="form-control <%= classes %> money"
+    id="<%= name %>"
+    maxlength="7"
+    name="<%= name %>"
+    selection-on-focus
+    format-money
+    ng-model="ngModel"
+    ng-required="ngRequired"
+    ng-model-options="{ updateOn : 'blur'}">
+
+
+  <span ng-transclude></span>
+</div>
